@@ -1,2 +1,2 @@
 # GMod Navmesh Size Checker
- A simple addon for developers wanting to know what size they want for the minimum size for `GetSizeX()` & `GetSizeY()`
+Introducing the Navmesh Size Checker, a simple tool for NextBot developers and anyone looking for precise measurements to use. Place this in the autorun folder of your addon and type `!navsize` in chat to receive the current Navmesh area size where your crosshairs are. This handy tool provides easy solution for developers wanting to know what size they want to go after the minimum size for `GetSizeX()` & `GetSizeY()`.
