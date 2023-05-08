@@ -1,6 +1,17 @@
 -- Simple addon for nextbot developers
 -- or for those that want to know what size they're aimming for GetSizeX / Y function
 
+if CLIENT then
+	hook.Add("Initialize", "HelloMessage", function()
+		local clrGreen = Color(0, 255, 0)
+		local clrWhite = Color(255, 255, 255)
+
+		timer.Simple(6, function()
+			chat.AddText(clrGreen, "[Navmesh Size Checker] ", clrWhite, "Type !navsize to check the size of the Navmesh area under your crosshairs.")
+		end)
+	end)
+end
+
 hook.Add("PlayerSay", "NavmeshSizeCommand", function(ply, text, isTeam)
 	if string.lower( text ) == "!navsize" then
 		-- Use a trace and HitPos to get the current NavMesh we are looking at
